@@ -5,3 +5,142 @@
 body {
    background-color: red;
 }
+
+.popup{
+   display: none;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   background-color: rgba(0,0,0,0.7);
+   overflow: hidden;
+   z-index: 99;
+}
+
+.popup .popup-content{
+   position: absolute;
+   width: 400px;
+   min-height: 150px;
+   margin: -150px 0 0 -200px;
+   top: 50%;
+   left: 50%;
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.2);
+}
+
+.popup .popup-title {
+   background-color: #609cd1;
+   padding: 15px 40px;
+   border-radius: 5px 5px 0px 0px;
+   text-align: center;
+   color: white;
+   text-transform: uppercase;
+}
+
+.popup .popup-title a {
+   position: absolute;
+   display: block;
+   width: 25px;
+   height: 25px;
+   top: -5px;
+   right: -5px;
+   text-decoration: none;
+   background-color: #609cd1;
+   border-radius: 25px;
+   text-align: center;
+   line-height: 25px;
+   color: white;
+   box-shadow: 0 0 2px 2px rgba(221, 221, 221, 0.7);
+}
+
+.popup .popup-title a:hover {
+   color: red;
+}
+
+.popup input[type='text']{
+   width: 200px;
+   font-family: Century Gothic;
+   font-size: 14px;
+   color: black;
+   border: 1px solid gray;
+   padding: 10px 5px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+}
+
+.popup input[type='submit']{
+   width: 210px;
+   font-family: Century Gothic;
+   font-size: 14px;
+   color: white;
+   background-color: #609cd1;
+   border: 1px solid #609cd1;
+   padding: 10px 5px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.popup input[type='submit']:hover{
+   background-color: #3a85c7;
+}
+
+.box-client-control {
+   display: none;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   background-color: rgba(0,0,0,0.6);
+   overflow: hidden;
+   z-index: 99999;    
+}
+
+.box-client-control-content {
+   position: absolute;
+   width: 400px;
+   min-height: 150px;
+   margin: -150px 0 0 -200px;
+   padding: 10px;
+   top: 50%;
+   left: 50%;
+   font-size: 14px;
+   background-color: #609cd1;
+   border-radius: 5px 5px 5px 5px;   
+   box-shadow: 0px 0px 10px #000; 
+}
+
+.box-client-control-close {
+   text-decoration: none;
+   display: inline-block;
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   padding: 5px;
+   font-size: 18px;
+   color: white;
+}
+
+.box-client-control-close:hover {
+   color: red;
+}
+
+.box-client-control-ok {
+   text-decoration: none;
+   display: inline-block;
+   position: absolute;
+   top: 0px;
+   right: 25px;
+   padding: 5px;
+   font-size: 18px;
+   color: white;
+}
+
+.box-client-control-ok:hover {
+   color: #00FF7F;
+}
